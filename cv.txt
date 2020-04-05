@@ -1,0 +1,126 @@
+Georgios (George) Kouros
+Electrical and Computer Engineer
+Agiou Stefanou 7
+Heraklion, Greece, 71409
+Mobile: (+30) 697 284 3182
+Email: george.kouros.ece@gmail.com
+ssskype: george.kouros.ece
+LinkedIn: gkouros
+Github: gkouros
+
+
+RESEARCH INTERESTS
+==================
+
+Artificial Intelligence, Computer Vision, Perception, SLAM, Autonomous
+Navigation, Deep Learning, Reinforcement Learning, Control, Optimization
+
+
+EDUCATION
+=========
+
+Aristotle University of Thessaloniki (AUTH)                [Sep 2010 - Nov 2016]
+Diploma in Electrical and Computer Engineering, Faculty of Engineering
+  * Grade: 7.84/10
+  * ECTS: 311
+  * Diploma Thesis (10/10): Development of an Autonomous Robotic Ground Vehicle
+    with a 4WS4WD Kinematic Model and Implementation of a System for Autonomous
+    Exploration in Unknown Environments
+  * Diploma Thesis Advisor: Assoc. Prof. Loukas Petrou
+
+3rd General Lyceum, Heraklion, Greece                      [Sep 2007 - Jun 2010] 
+(Secondary Education)
+  * GPA: 18.1/20 (Excellent)
+  * Panhellenic Examinations (University Entrance Exams) GPA: 19.25/20  
+
+ 
+PROFESSIONAL EXPERIENCE
+=======================
+
+Centre for Research and Technology Hellas (CERTH)          [May 2017 - Apr 2018]
+Research Assistant, Information Technologies Institute (ITI)
+  * Worked in the EU Horizon 2020 BADGER Robotics Research Project
+  * Researched and Developed Autonomous Navigation algorithms for a rover robot
+  * Invented a method to model Ground Penetrating Radars in robot simulations
+  * Developed a Subsurface Mapping algorithm for a rover-GPR system
+
+
+PUBLICATIONS
+============
+
+* (ACCEPTED) G. Kouros, I. Kostavelis, E. Skartados, D. Giakoumis, A. Simi,
+  M. Guido, D. Tzovaras, "3D Underground Mapping with a Mobile Robot and a GPR
+  Antenna", 2018 IEEE/RSJ International Conference on Intelligent Robots and
+  Systems (IROS), Madrid, Spain
+
+* G. Kouros, C. Psarras, I. Kostavelis, D. Giakoumis and D. Tzovaras, 
+  "Surface/subsurface mapping with an integrated rover-GPR system: A simulation 
+  approach," 2018 IEEE International Conference on Simulation, Modeling, and 
+  Programming for Autonomous Robots (SIMPAR), Brisbane, Australia, 2018, 
+  pp. 15-22. doi: 10.1109/SIMPAR.2018.8376265
+
+* G. Kouros and L. Petrou, "PANDORA Monstertruck: A 4WS4WD car-like robot for
+  autonomous exploration in unknown environments", 2017 12th IEEE Conference on
+  Industrial Electronics and Applications (ICIEA), Siem Reap, 2017, pp. 974-979.
+  doi: 10.1109/ICIEA.2017.8282980
+
+
+EXTRACURRICULAR ACTIVITIES
+==========================
+
+Various Activities                                          [May 2018 - Present]
+  * Development of Deep Learning skills through the "Convolutional Neural
+    Networks for Visual Recognition" course from Stanford University
+  * IELTS Examination (Exam Average Score: 8.5)
+
+Skill-Building through Online Courses                      [Dec 2016 - Apr 2017]
+  * "Intro to Artificial Intelligence" MOOC from Udacity
+  * "Introduction to Computer Vision" MOOC from Udacity and GATech
+  * "Deep Learning" MOOC from Udacity and Google
+
+Volunteer Robotics Engineer, PANDORA Robotics, AUTH        [Oct 2015 - Nov 2016]
+  * Developed a fully actuated autonomous 4WS4WD car-like robot
+  * Developed a dynamic local path deformation planner for car-like robots
+  * Developed a fuzzy-logic-based path tracking controller for 4WS robots
+  * Experimented with dynamic global planning with feasible motion primitives
+
+Volunteer SW-HW Engineer, PANDORA Robotics, AUTH           [Nov 2014 - Sep 2015]
+  * Installed, calibrated and integrated robot sensors and actuators
+  * Developed a teleoperation algorithm for the actuation of robot and sensors
+  * Optimized robot cable management with custom developed PCBs
+  * Participated in the team’s mission in Robocup Rescue 2015 in Hefei, China
+
+
+DISTINCTIONS AND AWARDS
+=======================
+
+* 2nd Best in Class Autonomy Distinction bestowed upon Pandora Robotics members
+  by the Robocup Federation for Robocup Rescue 2015 competition in Hefei, China
+* Excellence Award bestowed upon Pandora Robotics Team members by the Aristotle
+  University of Thessaloniki for our distinction in Robocup Rescue 2015
+
+
+TECHNICAL SKILLS
+================
+
+Programming:         C, C++, Python, MATLAB/Octave
+Parallel Computing:  CUDA, pthreads, MPI, OpenMP
+Libraries:           OpenCV, PCL, Fuzzylite, ACADO, NumPy, SciPy, Matplotlib
+Deep Learn.:         PyTorch, TensorfFlow, Keras
+Robotics:            ROS, Gazebo, STDR, URDF
+Progr. Tools:        Git, Vim, CMake
+OSs:                 Linux, Windows
+Design/Editing:      Blender, Camtasia, Inkscape,  Paint.net, Eagle CAD
+Office Tools:        LaTeX, Microsoft Office (Word, PowerPoint, Visio)
+Embedded:            Arduino, Raspberry Pi, Odroid, Atmel AVR
+Misc.:               3D Modelling, Electronics, PCB Manufacturing, Soldering
+
+
+LANGUAGES
+=========
+
+Greek:    Native  Language
+
+English:  Proficient (C2)
+  * IELTS  (8.5)  June 2018
+  * ECPE (C2) University of Michigan 2008
