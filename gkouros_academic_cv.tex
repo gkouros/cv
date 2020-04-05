@@ -1,0 +1,369 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{multicol} % Used for itemizing items in multiple columns
+\usepackage{xpatch}
+\xpatchcmd{\cventry}{.\strut}{\strut}{}{}
+
+\usepackage{fontawesome}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\newcommand*{\facebooksocialsymbol}{\faFacebook~}
+\newcommand*{\skypesocialsymbol}{\faSkype~}
+\RenewDocumentCommand{\social}{O{}O{}m}{%
+  \ifthenelse{\equal{#2}{}}%
+    {%
+      \ifthenelse{\equal{#1}{linkedin}}{\collectionadd[linkedin]{socials}{\protect\httplink[#3]{www.linkedin.com/in/#3}}}{}%
+      \ifthenelse{\equal{#1}{twitter}}{\collectionadd[twitter]{socials}{\protect\httplink[#3]{www.twitter.com/#3}}}{}%
+      \ifthenelse{\equal{#1}{facebook}}{\collectionadd[facebook]{socials}{\protect\httplink[#3]{www.facebook.com/#3}}}{}%
+      \ifthenelse{\equal{#1}{github}}{\collectionadd[github]{socials}{\protect\httplink[#3]{www.github.com/#3}}}{}%
+      \ifthenelse{\equal{#1}{skype}}{\collectionadd[skype]{socials}{\protect{#3}}}{}%
+    }
+    {\collectionadd[#1]{socials}{\protect\httplink[#3]{#2}}}}
+\makeatother
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+\def\myfirstname{Georgios}
+\def\mylastname{Kouros}
+\def\myaddress{Boulevard du Midi 41/3}
+\def\mycity{Brussels, 1000 Belgium}
+\def\myemail{george.kouros.ece@gmail.com}
+\def\myskype{george.kouros.ece}
+\def\mygithub{gkouros}
+\def\mylinkedin{gkouros}
+\def\mymobile{+30 6972 843 182}
+\def\mytitle{Robotics Engineer}
+
+
+\firstname{\myfirstname}
+\familyname{\mylastname}
+\title{\mytitle}
+\address{\myaddress}{\mycity}
+\mobile{\mymobile}
+\email{\myemail}
+\social[skype]{\href{skype:\myskype?chat}{\myskype}}
+\social[linkedin]{\mylinkedin}
+\social[github]{\mygithub}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+%\vspace{-10mm}
+
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL OBJECTIVE
+%----------------------------------------------------------------------------------------
+%\section{Personal Objective}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%\vspace{-6mm}
+\section{Research Interests}
+\vspace{-7mm}
+\cventry{}{}{}{}{}{
+\begin{multicols}{3}
+\begin{itemize}
+    \item Artificial Intelligence
+	\item Robot Perception
+  	\item Machine Learning
+	\item Autonomous Navigation
+	\item Computer Vision
+	\item SLAM
+\end{itemize}
+\end{multicols}}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\cventry{2010-2016}{Diploma (Integrated BSc \& MSc) in Electrical and Computer Engineering}{}{Faculty of Engineering, Aristotle University of Thessaloniki}{Greece}{
+% University
+\begin{itemize}
+	%\item Specialization: Electronics and Computer Engineering
+	\item Grade: 7.84/10, ECTS: 311
+	\item Relevant courses: Robotics(10/10), Pattern Recognition(8.5/10), Image Processing(8/10)
+	\item Thesis (10/10): Development of an Autonomous Robotic Ground Vehicle with a 4WS4WD Kinematic Model and Implementation of a System for Autonomous Exploration in Unknown Environments
+	\item Thesis Advisor: Assoc. Prof. Loukas Petrou\\
+\end{itemize}}
+
+%\vspace{0mm}
+% Lycyeum
+%\cventry{2007-2010}{Apolytyrion}{Grade: 18.1/20, 3rd Unified Lyceum, Heraklion, Crete}{}{}{
+%\begin{itemize}
+%	\item Panhellenic National Level Examinations (University Entrance Exams) Total Score: 19340
+%\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%   RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+%\vspace{-4mm}
+\section{Professional Experience}
+\cventry{January 2018 - Now}{Industry 4.0 Consultant}{Kapernikov CVBA}{Belgium}{}{
+Worked on several Industry 4.0 Projects trying to automate or augment manufacturing or monitoring operations for large industrial companies in the logistics, steel, and recycling industries. Focused mostly on Computer Vision solutions for RGB or IR/Thermal cameras  and utilized python, C++, ROS, OpenCV, Deep Learning. Also, prepared and presented a company-wide knowledge-sharing tech session about ROS, Visual Odometry and VSLAM.}
+
+\cventry{May 2017 - April 2018}{Research Assistant}{EU Horizon 2020 Project BADGER}{Information Technologies Institute (ITI)}{Centre for Research and Technology Hellas (CERTH)}{
+\begin{itemize}
+    \item Researched localization techniques for a subsurface drilling robot
+	\item Invented a novel method to model Ground Penetrating Radars (GPR) for robot simulation
+	\item Developed a 3D Subsurface Utility Mapping algorithm for robot-GPR systems
+	\item Implemented an autonomous coverage and navigation solution for a tractor-trailer robot
+\end{itemize}}
+
+
+%----------------------------------------------------------------------------------------
+%   Voluntary EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Voluntary Experience}
+
+%\cventry{Oct 2016 - Nov 2017}{Robotics Engineer}{Pandora Robotics Team}{Aristotle University of Thessaloniki}{}{
+%\begin{itemize}
+%	\item Developed a fully actuated autonomous 4WS4WD car-like robot
+%	\item Developed a 3D model of the robot for simulation and visualization purposes
+%	\item Developed a fuzzy-logic-based path tracking controller for 4WS car-like robots
+%	\item Developed a dynamic local path deformation planner (Reeds-Shepp Band) for 4WS robots
+%	\item Experimented with dynamic global path replanning with feasible motion primitives
+%	\item Performed system integration of the software modules of the robot using ROS
+%\end{itemize}}
+
+\cventry{Nov 2015 - Sept 2016}{SW-HW Engineer}{Pandora Robotics Team}{Aristotle University of Thessaloniki}{}{
+\begin{itemize}
+	\item Installed, calibrated and integrated sensors and actuators to the team's USAR robot
+	\item Developed a teleoperation algorithm for the actuation of the robot and its cameras
+	\item Optimized robot cable management with custom PCBs for sensors and electronics
+	\item Performed robot maintenance, hardware modifications and upgrades
+	\item Participated in the team's mission in Robocup Rescue 2015 in Hefei, China 
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+\vspace{-5mm}
+\cventry{}{}{}{}{}{
+\begin{itemize}
+   \item G. Kouros et al., "3D Underground Mapping with a Mobile Robot and a GPR Antenna," 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Madrid, 2018, pp. 3218-3224.
+doi: 10.1109/IROS.2018.8593848
+   \item G. Kouros, C. Psarras, I. Kostavelis, D. Giakoumis and D. Tzovaras, "Surface/subsurface mapping with an integrated rover-GPR system: A simulation approach," 2018 IEEE International Conference on Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR), Brisbane, Australia, 2018, pp. 15-22. doi: 10.1109/SIMPAR.2018.8376265
+   \item G. Kouros and L. Petrou, "PANDORA Monstertruck: A 4WS4WD car-like robot for autonomous exploration in unknown environments", 2017 12th IEEE Conference on Industrial Electronics and Applications (ICIEA), Siem Reap, 2017, pp. 974-979.
+doi: 10.1109/ICIEA.2017.8282980
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%   HONOURS AND AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Distinctions and Awards}
+\vspace{-5mm}
+\cventry{}{}{}{}{}{
+\begin{itemize}
+	\item \textit{2nd Best in Class Autonomy} Distinction bestowed upon Pandora Robotics Team members by the Robocup Federation for Robocup Rescue 2015 competition in Hefei, China
+	\item Excellence Award bestowed upon Pandora Robotics Team members by the Aristotle University of Thessaloniki for our distinction in the Robocup Rescue 2015 competition
+\end{itemize}
+}
+
+
+%----------------------------------------------------------------------------------------
+%   CONFERENCES, EVENTS AND COMPETITIONS
+%----------------------------------------------------------------------------------------
+
+%\section{Conferences and Competitions}
+%\vspace{-4mm}
+%\cventry{}{}{}{}{}{
+%\begin{itemize}
+%	\item Presentation of PANDORA Robotics in Sfhmmy 9, April 2016, Chania, Crete. 
+%	\item Presentation of PANDORA Robotics in TEDx Athens October 2015.
+%	\item Participated in the RoboCup Rescue 2015 Competition in Hefei, China.
+%\end{itemize}
+%}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\cvitem{Programming:}{\textsc{C, C++, Python, MATLAB/Octave}}
+\cvitem{Parallelization:}{CUDA, pthreads, MPI, OpenMP}
+\cvitem{Libraries:}{OpenCV, PCL, Fuzzylite, ACADO, OMPL, NumPy, SciPy, Matplotlib}
+\cvitem{Deep Learn.:}{PyTorch, TensorfFlow, Keras}
+\cvitem{Robotics:}{ROS, ROS2, Gazebo, STDR}
+\cvitem{Progr. Tools:}{\textsc{G}it, Vim, CMake, Doxygen, GitlabCI, Docker, Snapcraft}
+\cvitem{OSs:}{Linux, Windows}
+\cvitem{Embedded:}{Arduino, Raspberry Pi, Odroid, Atmel AVR}
+\cvitem{Design/Editing:}{Blender,  Camtasia, Inkscape, Paint.net, Eagle CAD}
+\cvitem{Office Tools:}{\LaTeX, Microsoft Office Word/PowerPoint/Visio}
+\cvitem{Misc.:}{3D Modelling, Electronics, PCB Manufacturing, Soldering}
+
+%----------------------------------------------------------------------------------------
+%   LANGUAGE SECTION
+%----------------------------------------------------------------------------------------
+\section{Languages}
+\cvlanguage {Greek}{Native Language}{}
+\cvlanguage{English}{Proficient (C2)}{IELTS (8.5) June 2018 | ECPE University of Michigan 2008,}
+
+
+%----------------------------------------------------------------------------------------
+%	COURSEWORK SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{ECE Diploma Sample Coursework}
+%\vspace{-6mm}
+%\cventry{}{}{}{}{}{
+%\begin{multicols}{2}
+%\begin{itemize}
+%   \item Data Structures (9/10)
+%   \item Digital Filters(10/10)
+%   \item Digital Image Processing (8/10)
+%   \item Microprocessors and Peripherals (10/10)
+%   \item Parallel and Distributed Systems (9.5/10)
+%   \item Pattern Recognition (8.5/10)
+%   \item Robotics (10/10)
+%   \item Software Engineering (8.5/10)
+%\end{itemize}
+%\end{multicols}
+%}
+
+
+%----------------------------------------------------------------------------------------
+%	MOOCS SECTION
+%----------------------------------------------------------------------------------------
+\section{Professional Development - MOOCs}
+\vspace{-6mm}
+\cventry{}{}{}{}{}{
+\begin{multicols}{2}
+\begin{itemize}
+	\item Intro to Artificial Intelligence (Udacity)
+	\item Introduction to Computer Vision (Udacity)
+%    \item Deep Learning (Udacity)
+	\item Machine Learning (Coursera)
+	\item CNNs for Visual Recognition (Stanford)
+\end{itemize}
+\end{multicols}
+}
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL SKILLS
+%----------------------------------------------------------------------------------------
+\vspace{-2mm}
+\section{Soft Skills}
+\vspace{-6mm}
+\cventry{}{}{}{}{}{
+\begin{multicols}{4}
+\begin{itemize}
+	\item Motivated
+	\item Reliable
+	\item Organized
+	\item Teamworking
+	\item Problem Solver
+	\item Inventive
+	\item Industrious
+	\item Independent
+\end{itemize}
+\end{multicols}
+}
+
+%----------------------------------------------------------------------------------------
+%	HOBBIES
+%----------------------------------------------------------------------------------------
+
+%\section{Hobbies}
+%\vspace{-4mm}
+%\cventry{}{}{}{}{}{
+%\begin{multicols}{3}
+%\begin{itemize}
+%	\item Cinema
+%	\item Computers
+%	\item Reading
+%	\item Gadgets
+%	\item Music
+%	\item DIY Projects
+%\end{itemize}
+%\end{multicols}
+%}
+
+%----------------------------------------------------------------------------------------
+%	References
+%----------------------------------------------------------------------------------------
+%\section{References}
+%\center Upon Request
+%\begin{tabular}{lr}
+%
+%%Available upon request
+%\begin{minipage}[t]{3in}
+%\textbf{Loukas Petrou}\\
+%Associate Professor\\
+%ECE Dpt, AUTH, Greece\\
+%\phonesymbol +30 2310 996294\\ 
+%\emailsymbol \href{mailto:loukas@eng.auth.gr}{loukas@eng.auth.gr}
+%\end{minipage}
+%%&
+%%\begin{minipage}[t]{3in}
+%%\textbf{Andreas Symeonidis}\\
+%%Assistant Professor\\
+%%ECE Dpt, AUTH, Greece\\
+%%\phonesymbol +30 2310 994344\\
+%%\emailsymbol \href{mailto:asymeon@eng.auth.gr}{asymeon@eng.auth.gr}
+%%\end{minipage}
+%
+%
+%%\section{Professional References}
+%%\begin{tabular}{lr}
+%\begin{minipage}[t]{3in}
+%\textbf{Ioannis Kostavelis}\\
+%Postdoc Research Associate\\
+%ITI, CERTH, Greece\\
+%\phonesymbol +30 2311 257782\\
+%\emailsymbol \href{mailto:gkostave@iti.gr}{gkostave@iti.gr}
+%\end{minipage}
+%
+%\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	CONTACT INFO FOOTER
+%----------------------------------------------------------------------------------------
+%
+\fancyfoot[c]{\parbox[b]{10cm}{\center\color{color2}\addressfont\strut \myfirstname~\mylastname ~$\bullet$~ \myaddress, \mycity\\ \mobilesymbol \mymobile ~$\bullet$~ \emailsymbol \href{mailto:\myemail}{\myemail}\\ \faSkype \, \href{skype:\myskype?chat}{\myskype} ~$\bullet$~ \faLinkedin \, \href{https://www.linkedin.com/in/\mylinkedin}{\mylinkedin} ~$\bullet$~ \faGithub \, \href{https://github.com/\mygithub}{\mygithub}}}
+
+\end{document}
