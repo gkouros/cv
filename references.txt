@@ -1,0 +1,15 @@
+References
+================================================================================
+* Name Surname
+  Title
+  Professional Title
+  Department
+  Organization / Company
+  PO City, Country
+  Tel: +00 0000000000
+  Fax:  +00 0000000000
+  Fax: +00 0000000000
+  Email: name@domain.com
+
+
+Name Surname, Title, Department, Organization, +00 000000000000, name@domain.com
